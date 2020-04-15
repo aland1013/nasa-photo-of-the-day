@@ -5,8 +5,8 @@ const Picture = (props) => {
 
   return (
     <>
-      <h2 className="ui inverted center aligned segment blue">{title}</h2>
-        <img className="ui fluid rounded image" src={url} />
+      <div className="ui horizontal divider"><h3>{title}</h3></div>
+      <img className="ui centered huge rounded image" src={url} alt="" />
       <div className="ui segment">
         <p>{explanation}</p>
       </div>
