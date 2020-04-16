@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import "./App.css";
+import styled from 'styled-components';
 import Header from './components/Header';
 import Picture from './components/Picture';
 import ChangePicture from './components/ChangePicture';
 import formatDate from './formatDate';
+
+const Container = styled.div`
+  width: 75%;
+  margin: 0 auto;
+`;
 
 function App() {
   const [data, setData] = useState(null);
@@ -26,7 +31,7 @@ function App() {
   }
 
   return (
-    <div className="ui container">
+    <Container>
       <Header date={date} />
       <Picture 
         title={data.title}
@@ -34,7 +39,7 @@ function App() {
         explanation={data.explanation}
       />
       <ChangePicture date={date} setDate={setDate} />
-    </div>
+    </Container>
   );
 }
 
