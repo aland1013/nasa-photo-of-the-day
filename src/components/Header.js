@@ -1,15 +1,26 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const TitleWrapper = styled.div`
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 15px 5px;
+  margin: 10px 0;
+  background: #F0F0F0;
+`;
+
+const H1 = styled.h1`
+  font-size: 48px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+`;
 
 const Header = (props) => {
   return (
     <>
-      <div className="ui hidden divider"></div>
-      <h1 className="ui block header">
-        <i className="rocket icon"></i>
-        <div className="content">
-          NASA Astronomy Picture of the Day: {props.date}
-        </div>
-      </h1>
+      <TitleWrapper>
+        <H1>NASA Astronomy Picture of the Day: {props.date}</H1>
+      </TitleWrapper>
     </>
   );
 }
