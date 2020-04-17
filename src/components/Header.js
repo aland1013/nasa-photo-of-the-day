@@ -10,7 +10,7 @@ const TitleWrapper = styled.div`
 `;
 
 const H1 = styled.h1`
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
 `;

@@ -13,15 +13,15 @@ const HR = styled.hr`
 `;
 
 const H2 = styled.h2`
-  font-size: 40px;
+  font-size: 28px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 `;
 
 const NasaImage = styled.img`
   display: block;
-  width: 70%;
-  margin: 20px auto;
+  width: 95%;
+  margin: auto;
   border-radius: 3px;
 `;
 
@@ -29,8 +29,8 @@ const ContentContainer = styled.div`
   box-sizing: border-box;
   border: 1px solid lightgray;
   border-radius: 3px;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 0 20px;
+  margin: 30px 0 20px;
 
 `;
 
